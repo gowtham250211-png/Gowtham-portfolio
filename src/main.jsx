@@ -436,7 +436,7 @@ function Contact() {
         <div className="contact-links">
           <a href="mailto:gowtham250211@gmail.com"><Icon name="mail" />gowtham250211@gmail.com</a>
           <a href="tel:+919952605003"><Icon name="phone" />9952605003</a>
-          <a href="https://linkedin.com/in/gowtham-g299132308" target="_blank" rel="noreferrer"><Icon name="linkedin" />LinkedIn</a>
+          <a href="https://www.linkedin.com/in/gowtham-g-299132308/" target="_blank" rel="noreferrer"><Icon name="linkedin" />LinkedIn</a>
           <a href="https://github.com/gowtham250211-png" target="_blank" rel="noreferrer"><Icon name="github" />GitHub</a>
         </div>
       </div>
