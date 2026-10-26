@@ -1,0 +1,75 @@
+:root {
+  --bg: #0b0d11;
+  --bg2: #101318;
+  --panel: #15191f;
+  --panel2: #1a2027;
+  --text: #f3f3f0;
+  --muted: #a1a5aa;
+  --faint: #686f77;
+  --line: #2a3037;
+  --yellow: #f7d642;
+  --yellow-dark: #4c4426;
+  --green: #8cd39f;
+  --shell: 1190px;
+  --display: "Space Grotesk",Arial,sans-serif;
+  --body: "DM Sans",Arial,sans-serif;
+  --mono: "JetBrains Mono",monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 16px/1.65 var(--body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--yellow);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+h1,h2,h3,h4,p {
+  margin: 0;
+}
+
+h1,h2,h3,h4 {
+  font-family: var(--display);
+  line-height: 1.18;
+}
+
+button {
+  font: inherit;
+}
+
+button:focus-visible,a:focus-visible {
+  outline: 2px solid var(--yellow);
+  outline-offset: 4px;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+.shell {
+  max-width: var(--shell);
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+.highlight-text {
+  color: var(--yellow);
+}

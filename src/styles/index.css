@@ -1,0 +1,13 @@
+@import './base.css';
+@import './layout.css';
+
+@import './hero.css';
+@import './general.css';
+@import './skills.css';
+@import './projects.css';
+@import './project-art.css';
+@import './experience.css';
+@import './contact.css';
+
+@import './responsive.css';
+@import './enhancements.css';

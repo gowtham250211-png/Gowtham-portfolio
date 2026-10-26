@@ -1,0 +1,123 @@
+.section-contact {
+  background: #101419;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.contact-inner {
+  position: relative;
+  border: 1px solid #4a432a;
+  border-radius: 19px;
+  padding: 60px 70px 34px;
+  overflow: hidden;
+  background: radial-gradient(ellipse at 93% 0%,rgba(247,214,66,.105),transparent 56%),#191c20;
+}
+
+.contact-inner:after {
+  content: "G";
+  pointer-events: none;
+  position: absolute;
+  right: 2%;
+  top: -95px;
+  font: 700 410px var(--display);
+  color: rgba(247,214,66,.035);
+  line-height: 1;
+}
+
+.contact-kicker {
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font: 600 11px var(--mono);
+  letter-spacing: .08em;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-inner h2 {
+  font-size: clamp(39px,5vw,65px);
+  letter-spacing: -.06em;
+  margin-top: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-inner h2 span {
+  color: var(--yellow);
+}
+
+.contact-inner>p {
+  max-width: 550px;
+  font-size: 15px;
+  color: #aaafb3;
+  line-height: 1.8;
+  margin-top: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-ctas {
+  display: flex;
+  gap: 12px;
+  margin-top: 29px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-footer {
+  border-top: 1px solid #3f4445;
+  margin-top: 47px;
+  padding-top: 21px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.contact-footer a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #e0e2df;
+  font-size: 13px;
+}
+
+.contact-footer a:hover {
+  color: var(--yellow);
+}
+
+.contact-footer>span {
+  font-size: 12px;
+  color: #868e95;
+}
+
+.site-footer {
+  background: #0b0d11;
+}
+
+.footer-inner {
+  min-height: 105px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.footer-inner>span {
+  color: #81868b;
+  font-size: 12px;
+  margin-left: auto;
+}
+
+.footer-inner>a:last-child {
+  color: #c8cccd;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.footer-inner>a:last-child:hover {
+  color: var(--yellow);
+}
