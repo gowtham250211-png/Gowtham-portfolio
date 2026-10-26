@@ -1,119 +1,144 @@
-# Gowtham G — Modular React Portfolio
+# Gowtham G — Software Developer Portfolio
 
-A recruiter-friendly, responsive software-developer portfolio built with **React and Vite**. It retains the black/charcoal + yellow visual design from the previous version, but organizes the code into independent **frontend features** that are easy to maintain and explain in interviews.
+**Software Developer | Java Full Stack | React.js | Spring Boot | AI & Data Science Graduate**
 
-> **Architecture note:** This is **feature-based frontend architecture**, not microservices. True microservices are separately deployed backend services communicating over APIs. Creating fake services for a static portfolio would add needless complexity. See `docs/ARCHITECTURE_AND_INTERVIEW.md`.
+A responsive personal portfolio built with **React 18 and Vite**, showcasing my technical skills, projects, internship experience, and education.
 
-## Run the project
+The application uses a modern black-and-yellow design, a feature-based React architecture, reusable components, and organized external CSS.
 
-Requirements: Node.js 18+ and npm.
+**Live Website:** [gowthamportfolio-mu.vercel.app](https://gowthamportfolio-mu.vercel.app/)
 
-```bash
-npm install
-npm run dev
-```
+## About Me
 
-Open the local URL shown in the terminal (usually `http://localhost:5173`).
+I am a 2026 B.Tech Artificial Intelligence & Data Science graduate from Annai Mira College of Engineering and Technology, with a CGPA of 8.37.
 
-Production build:
+My technical skills include Java, Spring Boot, React.js, JavaScript, REST APIs, MySQL, PostgreSQL, and Git. I also completed a Full Stack Developer internship at Femtosoft Technologies, Chennai.
 
-```bash
-npm run build
-npm run preview
-```
-
-Deploy to Vercel: import this repository, select Vite, build command `npm run build`, output folder `dist`.
+I am passionate about building practical software applications, solving problems, and learning new technologies.
 
 ## Features
 
-- Responsive single-page portfolio with a dark/yellow identity
-- Reusable page sections: Hero, About, Skills, Projects, Experience and Contact
-- Separate React components and external CSS files; no inline stylesheet
-- Working All / Full stack / Frontend project filters
-- **New:** live project keyword search, match count, clear-filter empty state
-- **New:** scroll-progress indicator and back-to-top control
-- **New:** copy-email action with clear success/fallback feedback
-- Accessible navigation, escape-key closing on mobile, keyboard focus states and skip-to-content link
-- GitHub, LinkedIn, project, resume download and email links
-- Three project-themed design illustrations — **not screenshots** of the deployed apps
-- Minimal dependencies: React, React DOM, and Vite
+- Responsive portfolio with mobile-friendly navigation
+- Hero, About, Skills, Projects, Experience, and Contact sections
+- Featured projects and mini-project showcase
+- Project filtering by Full Stack and Frontend
+- Live project search using React state
+- Scroll-progress indicator and back-to-top navigation
+- Resume download functionality
+- Copy-email button with feedback
+- GitHub, LinkedIn, and project links
+- Accessible navigation and keyboard interactions
 
-## Important project folders
+## Technology Stack
 
-```text
-src/
-├── main.jsx                     # React entry point, imports App and styles
-├── app/
-│   └── App.jsx                  # Composes the entire page
-├── components/
-│   ├── layout/                  # Header, Footer, Wordmark
-│   └── ui/                      # Icon, SectionTitle, ScrollProgress, BackToTop
-├── data/
-│   ├── profile.js               # Contact links, name and resume
-│   ├── navigation.js            # Navigation items
-│   ├── skills.js                # Skill categories
-│   └── projects.js              # Project content and URLs
-├── features/
-│   ├── hero/                    # Introduction and developer code panel
-│   ├── about/                   # Short professional story
-│   ├── skills/                  # Tech stack
-│   ├── projects/                # Cards, artwork, filtering and searching
-│   ├── experience/              # Internship, education and certificates
-│   └── contact/                 # Email, copy button and LinkedIn
-└── styles/
-    ├── index.css                # Imports the external stylesheets
-    ├── base.css                 # Colors, typography and resets
-    ├── layout.css               # Header/navigation styles
-    ├── hero.css                 # Hero layout
-    ├── general.css              # About and shared section styles
-    ├── skills.css               # Skills section styles
-    ├── projects.css             # Project cards and controls
-    ├── project-art.css          # Project illustration styles
-    ├── experience.css           # Experience timeline
-    ├── contact.css              # Contact area
-    ├── responsive.css           # Screen-size and motion adaptations
-    └── enhancements.css         # Search, scroll, clipboard feedback
-```
+| Category | Technologies |
+|---|---|
+| Frontend | React.js, JavaScript, HTML5, CSS3 |
+| Build Tool | Vite |
+| React Features | useState, useEffect, useMemo |
+| Styling | External CSS, CSS Variables, Media Queries |
+| Version Control | Git, GitHub |
+| Deployment | Vercel |
 
-## Where to make changes
+## Featured Projects
 
-| Want to change... | File |
-| --- | --- |
-| Name, email, LinkedIn, GitHub | `src/data/profile.js` |
-| Project descriptions and links | `src/data/projects.js` |
-| Skill list | `src/data/skills.js` |
-| Hero text | `src/features/hero/Hero.jsx` |
-| About text | `src/features/about/About.jsx` |
-| Internship / education / certificates | `src/features/experience/Experience.jsx` |
-| Footer text | `src/components/layout/Footer.jsx` |
-| Theme colors | `src/styles/base.css` (`:root` variables) |
-| Resume PDF | `public/Gowtham_G_Resume.pdf` (replace with your latest approved PDF) |
-| Portfolio browser title/SEO text | `index.html` |
+**Employee Performance & Task Management System (EPTMS)**
 
-### Add another project
+An enterprise application featuring role-based access control, task management, leave workflows, and performance tracking.
 
-Open `src/data/projects.js` and add an item with the same fields to `PROJECTS` (featured) or `MINI_PROJECTS` (small projects). The React cards and search will update automatically; you don't need to edit JSX for every project.
+Technologies: Java 21, Spring Boot, React.js, PostgreSQL, Docker.
 
-### Explain to an interviewer
+[GitHub Repository](https://github.com/gowtham250211-png/EPTMS-platform)
 
-> “I built my portfolio as a React single-page application using a feature-based architecture. The App component assembles page sections, while shared components handle navigation and UI. I store profile, skill and project data separately so content can change without rewriting components. CSS is in dedicated files. I use React state for project filters and search, and effects for scroll behavior. The design is responsive and deployed as a static frontend.”
+**Self-Healing Logistics System**
 
-More details and possible interview questions: **[`docs/ARCHITECTURE_AND_INTERVIEW.md`](docs/ARCHITECTURE_AND_INTERVIEW.md)**.
+A logistics management platform with automated failure detection, shipment monitoring, and recovery workflows.
 
-## Before publishing
+Technologies: Java, Spring Boot, React.js, MySQL, REST APIs.
 
-1. Check your CV in `public/Gowtham_G_Resume.pdf`: it is bundled from the earlier portfolio; replace it if you have a newer approved version.
-2. Open all GitHub URLs and the EstateFlow live demo, because links can change.
-3. Test the site at desktop and mobile sizes.
-4. Your email is public by design; don't add personal data you don't want publicly visible.
-5. The portfolio project artwork is illustrative UI, not evidence of the applications' actual screens.
+[GitHub Repository](https://github.com/gowtham250211-png/self-healing-logistic-system)
 
-## Validation note
+**EstateFlow CRM**
 
-The modular JSX components were parsed and server-rendered successfully in the creation environment. A full `vite build` couldn't be completed there because the pre-existing dependency bundle lacked a Linux-specific native Vite binding; run `npm install` on your own machine before building.
+A real estate customer relationship management platform for leads, properties, and booking workflows.
 
+Technologies: React.js, Spring Boot, PostgreSQL, JWT.
 
-## Learn the CSS (beginner-friendly)
+[GitHub Repository](https://github.com/gowtham250211-png/Estateflow-crm) | [Live Demo](https://estateflow-crm-one.vercel.app/)
 
-All styling has been expanded from compact one-line rules into readable selectors and declarations.
-Read [`docs/CSS_LEARNING_GUIDE.md`](docs/CSS_LEARNING_GUIDE.md) for a step-by-step explanation of how `className` in JSX maps to `.class` and `#id` selectors in external CSS files.
+Additional projects include Weather API, QR Code Generator, BMI Calculator, and Quotes.
+
+## Architecture
+
+The portfolio follows a **feature-based React frontend architecture**. Each feature has a separate responsibility, shared components are reusable, and application content is separated from presentation.
+
+The project is a frontend application, not a backend microservices system.
+
+Main folders:
+
+- `src/app/` — Main App component
+- `src/components/` — Reusable layout and UI components
+- `src/features/` — Hero, About, Skills, Projects, Experience, and Contact
+- `src/data/` — Profile, projects, skills, and navigation data
+- `src/styles/` — External CSS files
+- `public/` — Resume and static assets
+- `docs/` — Architecture and CSS learning documentation
+
+## Getting Started
+
+Requirements: Node.js 18+ and npm.
+
+Install dependencies:
+
+`npm install`
+
+Start the development server:
+
+`npm run dev`
+
+Create a production build:
+
+`npm run build`
+
+Preview the production build locally:
+
+`npm run preview`
+
+## Deployment
+
+The portfolio is deployed using Vercel.
+
+- Framework: Vite
+- Root Directory: `./`
+- Build Command: `npm run build`
+- Output Directory: `dist`
+
+**Live Portfolio:** https://gowthamportfolio-mu.vercel.app/
+
+## Customization
+
+| Purpose | File |
+|---|---|
+| Personal information | `src/data/profile.js` |
+| Projects | `src/data/projects.js` |
+| Technical skills | `src/data/skills.js` |
+| Hero section | `src/features/hero/Hero.jsx` |
+| Experience and education | `src/features/experience/Experience.jsx` |
+| Theme and colors | `src/styles/base.css` |
+| Resume | `public/Gowtham_G_Resume.pdf` |
+
+For detailed explanations, see:
+
+- [Architecture and Interview Guide](docs/ARCHITECTURE_AND_INTERVIEW.md)
+- [CSS Learning Guide](docs/CSS_LEARNING_GUIDE.md)
+
+## Contact
+
+**Gowtham G**
+
+- [LinkedIn](https://linkedin.com/in/gowtham-g-299132308/)
+- [GitHub](https://github.com/gowtham250211-png)
+- [Portfolio](https://gowthamportfolio-mu.vercel.app/)
+- Email: gowtham250211@gmail.com
+
+**Open to entry-level Software Developer, Java Full Stack, React Developer, and related software engineering opportunities.**
